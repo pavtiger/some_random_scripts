@@ -1,0 +1,64 @@
+0 verbose cli [ '/usr/bin/node', '/usr/local/bin/npm', 'install', 'main.js' ]
+1 info using npm@7.13.0
+2 info using node@v10.19.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/home/pavtiger/Docs/_stuff/killer/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:/root/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 8ms
+19 timing npm:load:configload Completed in 8ms
+20 timing npm:load:setTitle Completed in 0ms
+21 timing npm:load:setupLog Completed in 1ms
+22 timing npm:load:cleanupLog Completed in 2ms
+23 timing npm:load:configScope Completed in 0ms
+24 timing npm:load:projectScope Completed in 0ms
+25 timing npm:load Completed in 12ms
+26 timing config:load:flatten Completed in 2ms
+27 timing arborist:ctor Completed in 0ms
+28 timing arborist:ctor Completed in 1ms
+29 timing idealTree:init Completed in 9ms
+30 timing idealTree:userRequests Completed in 1ms
+31 silly idealTree buildDeps
+32 silly fetch manifest main.js@*
+33 silly placeDep ROOT main.js@ Symbol(OK) for:  want: *
+34 timing idealTree:#root Completed in 6ms
+35 timing idealTree:node_modules/main.js Completed in 0ms
+36 timing idealTree:buildDeps Completed in 7ms
+37 timing idealTree:fixDepFlags Completed in 0ms
+38 timing idealTree Completed in 18ms
+39 timing command:install Completed in 30ms
+40 verbose type system
+41 verbose stack FetchError: request to https://registry.npmjs.org/main.js failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+41 verbose stack     at ClientRequest.req.on.er (/usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/index.js:97:14)
+41 verbose stack     at ClientRequest.emit (events.js:198:13)
+41 verbose stack     at TLSSocket.socketErrorListener (_http_client.js:401:9)
+41 verbose stack     at TLSSocket.emit (events.js:203:15)
+41 verbose stack     at emitErrorNT (internal/streams/destroy.js:91:8)
+41 verbose stack     at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+41 verbose stack     at process._tickCallback (internal/process/next_tick.js:63:19)
+42 verbose cwd /home/pavtiger/Docs/_stuff/killer
+43 verbose Linux 5.4.0-84-generic
+44 verbose argv "/usr/bin/node" "/usr/local/bin/npm" "install" "main.js"
+45 verbose node v10.19.0
+46 verbose npm  v7.13.0
+47 error code ENOTFOUND
+48 error syscall getaddrinfo
+49 error errno ENOTFOUND
+50 error network request to https://registry.npmjs.org/main.js failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+51 error network This is a problem related to network connectivity.
+51 error network In most cases you are behind a proxy or have bad network settings.
+51 error network
+51 error network If you are behind a proxy, please make sure that the
+51 error network 'proxy' config is set properly.  See: 'npm help config'
+52 verbose exit 1
